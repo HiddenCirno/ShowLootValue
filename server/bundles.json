@@ -1,0 +1,185 @@
+{
+    "manifest": [
+        {
+            "key": "heart.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "server.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "fusu.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "zongheng.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "tank.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "reactor.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "card_zero.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "clock.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "secret_server.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "plate_carbon.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "military_radar.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "supercircuit.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "cleaner_robot.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "fastdisk.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "cannon_ammo.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "power_battery.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "blackbox.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "power_cleaner.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "btrbattery.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "aed.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "cloud_storage.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "btrmodel.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "statue_human.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "notebook.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "military_terminal.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "military_radio.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "old_gun.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "military_drone.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "breath_machine.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "statue_animal.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "military_control_terminal.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "fossil.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "champagne.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "gpu.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "gold_block.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "quantum_storage.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "caviar.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "ecmo.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "medic_machine.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "crown.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "musicbox.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "earth.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "camera.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "mechine_watch.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "testing_data.bundle",
+            "dependencyKeys": []
+        }
+
+    ]
+}

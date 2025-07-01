@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TKFSinglePlayer\\GitRepo\\\u4EF7\u503C\u6D4B\u8BD5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF3C760-BBAC-4217-98D4-B170F69C99F0}|PriceDisplay.csproj|d:\\tkfsingleplayer\\gitrepo\\\u4EF7\u503C\u6D4B\u8BD5\\tkf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF3C760-BBAC-4217-98D4-B170F69C99F0}|PriceDisplay.csproj|solutionrelative:tkf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PriceDisplay||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TKF.cs",
+              "DocumentMoniker": "D:\\TKFSinglePlayer\\GitRepo\\\u4EF7\u503C\u6D4B\u8BD5\\TKF.cs",
+              "RelativeDocumentMoniker": "TKF.cs",
+              "ToolTip": "D:\\TKFSinglePlayer\\GitRepo\\\u4EF7\u503C\u6D4B\u8BD5\\TKF.cs",
+              "RelativeToolTip": "TKF.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAIwMgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:32:06.757Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PriceDisplay",
+              "DocumentMoniker": "D:\\TKFSinglePlayer\\GitRepo\\\u4EF7\u503C\u6D4B\u8BD5\\PriceDisplay.csproj",
+              "RelativeDocumentMoniker": "PriceDisplay.csproj",
+              "ToolTip": "D:\\TKFSinglePlayer\\GitRepo\\\u4EF7\u503C\u6D4B\u8BD5\\PriceDisplay.csproj",
+              "RelativeToolTip": "PriceDisplay.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-25T05:07:01.379Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

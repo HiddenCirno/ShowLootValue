@@ -1,0 +1,8 @@
+D:\TKFSinglePlayer\GitRepo\价值测试\bin\Debug\PriceDisplay.dll
+D:\TKFSinglePlayer\GitRepo\价值测试\bin\Debug\PriceDisplay.pdb
+D:\TKFSinglePlayer\GitRepo\价值测试\obj\Debug\PriceDisplay.csproj.AssemblyReference.cache
+D:\TKFSinglePlayer\GitRepo\价值测试\obj\Debug\PriceDisplay.csproj.CoreCompileInputs.cache
+D:\TKFSinglePlayer\BepInEx\plugins\PriceDisplay.dll
+D:\TKFSinglePlayer\BepInEx\plugins\PriceDisplay.pdb
+D:\TKFSinglePlayer\GitRepo\价值测试\obj\Debug\PriceDisplay.dll
+D:\TKFSinglePlayer\GitRepo\价值测试\obj\Debug\PriceDisplay.pdb

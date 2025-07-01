@@ -1,0 +1,9 @@
+{
+    "name": "战利品价值展示",
+    "version": "1.0.0",
+    "main": "src/mod.js",
+    "license": "CC-BY-SA",
+    "author": "千叶玲花",
+    "sptVersion": "*.*.*",
+    "isBundleMod": false
+}

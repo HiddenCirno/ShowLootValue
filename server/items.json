@@ -1,0 +1,1312 @@
+{
+    "纵横": {
+        "_id": "纵横",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "纵横",
+        "_props": {
+            "Name": "“纵横”",
+            "ShortName": "“纵横”",
+            "Description": "对弈中最忌讳的即是错判局势，误以为优势还在自己手中……",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 4.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "zongheng.bundle",
+                "rcid": ""
+            },
+            "Price": 3435702,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "复苏呼吸机": {
+        "_id": "复苏呼吸机",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "复苏呼吸机",
+        "_props": {
+            "Name": "复苏呼吸机",
+            "ShortName": "复苏呼吸机",
+            "Description": "医疗道具，专为体征已经极度衰弱，自主呼吸已经消失的病患设计的辅助呼吸设备，生命的最终防线。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "fusu.bundle",
+                "rcid": ""
+            },
+            "Price": 11027486,
+            "RagfairType": "5b47574386f77428ca22b2f3",
+            "StaticLoot": true,
+            "StaticWeight": 20,
+            "MapLoot": true,
+            "MapWeight": 160,
+            "LootList": [
+                "5c0530ee86f774697952d952"
+            ]
+        }
+    },
+    "刀片服务器": {
+        "_id": "刀片服务器",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "刀片服务器",
+        "_props": {
+            "Name": "刀片服务器",
+            "ShortName": "刀片服务器",
+            "Description": "电子物品，高性能的军事级数据处理装置，专为提供强大计算能力和高速数据传输能力，以满足战场上严苛的讯息处理需求。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 4,
+            "Weight": 6.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "server.bundle",
+                "rcid": ""
+            },
+            "Price": 1440240,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "非洲之心": {
+        "_id": "非洲之心",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "非洲之心",
+        "_props": {
+            "Name": "非洲之心",
+            "ShortName": "非洲之心",
+            "Description": "世界上最大的钻石，璀璨夺目，象征永恒的爱。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.6,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "heart.bundle",
+                "rcid": ""
+            },
+            "Price": 13141314,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 20,
+            "MapLoot": true,
+            "MapWeight": 160,
+            "LootList": [
+                "5c1d0efb86f7744baf2e7b7b",
+                "5c1d0c5f86f7744bb2683cf0"
+            ]
+        }
+    },
+    "主战坦克模型": {
+        "_id": "主战坦克模型",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "主战坦克模型",
+        "_props": {
+            "Name": "主战坦克模型",
+            "ShortName": "坦克模型",
+            "Description": "这台主战坦克模型，严格按照真实尺寸缩比制作，细节精致。炮塔与车身可电动旋转，让您全方位欣赏这台钢铁巨兽。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 3.3,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "tank.bundle",
+                "rcid": ""
+            },
+            "Price": 2142119,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "微型反应炉": {
+        "_id": "微型反应炉",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "微型反应炉",
+        "_props": {
+            "Name": "微型反应炉",
+            "ShortName": "反应炉",
+            "Description": "搭载小型反应装置，通过正电子和光子碰撞时产生的巨大能量为设备供能，哈夫克已将其投入在公司研发的新型航天器上。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 10,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "reactor.bundle",
+                "rcid": ""
+            },
+            "Price": 2141889,
+            "RagfairType": "5b47574386f77428ca22b2ed",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5d1b2f3f86f774252167a52c"
+            ]
+        }
+    },
+    "东楼经理室": {
+        "_id": "东楼经理室",
+        "targetid": "5c94bbff86f7747ee735c08f",
+        "_name": "东楼经理室",
+        "_props": {
+            "Name": "东楼经理室",
+            "ShortName": "东楼经理",
+            "Description": "东楼经理室。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "card_zero.bundle",
+                "rcid": ""
+            },
+            "MaximumNumberOfUsage": 20,
+            "Price": 3714480,
+            "RagfairType": "5c518ed586f774119a772aee",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5c94bbff86f7747ee735c08f",
+                "5c1e495a86f7743109743dfb"
+            ]
+        }
+    },
+    "赛伊德的怀表": {
+        "_id": "赛伊德的怀表",
+        "targetid": "59faf7ca86f7740dbe19f6c2",
+        "_name": "赛伊德的怀表",
+        "_props": {
+            "Name": "赛伊德的怀表",
+            "ShortName": "怀表",
+            "Description": "游荡猎人赛伊德的贴身怀表，听说里面有着他身世的秘密。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.3,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "clock.bundle",
+                "rcid": ""
+            },
+            "Price": 216831,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "59faf7ca86f7740dbe19f6c2"
+            ]
+        }
+    },
+    "绝密服务器": {
+        "_id": "绝密服务器",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "绝密服务器",
+        "_props": {
+            "Name": "绝密服务器",
+            "ShortName": "绝密服务器",
+            "Description": "已贮存极高密级情报的服务器机柜，经研判属于高性能的军事级数据处理装置，数据已经过复杂加密，需要专业人员解析。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 5.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "secret_server.bundle",
+                "rcid": ""
+            },
+            "Price": 2080379,
+            "RagfairType": "5b47574386f77428ca22b341",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "强化碳纤维板": {
+        "_id": "强化碳纤维板",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "强化碳纤维板",
+        "_props": {
+            "Name": "强化碳纤维板",
+            "ShortName": "碳纤维板",
+            "Description": "工具&材料，一种轻量、高强度、高刚性的先进复合材料，广泛应用于航空航天、建筑等领域。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 3.7,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "plate_carbon.bundle",
+                "rcid": ""
+            },
+            "Price": 2154686,
+            "RagfairType": "5b47574386f77428ca22b2ee",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5d1b2f3f86f774252167a52c"
+            ]
+        }
+    },
+    "便携军用雷达": {
+        "_id": "便携军用雷达",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "便携军用雷达",
+        "_props": {
+            "Name": "便携军用雷达",
+            "ShortName": "军用雷达",
+            "Description": "这台便携式军用雷达体积轻巧，易于携带，可在各种环境中使用。其高精度传感器和强大数据处理能力，能够迅速探测到周边敌情，为部队提供有力支持。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 9.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "military_radar.bundle",
+                "rcid": ""
+            },
+            "Price": 2047025,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5d03775b86f774203e7e0c4b"
+            ]
+        }
+    },
+    "曼德尔超算单元": {
+        "_id": "曼德尔超算单元",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "曼德尔超算单元",
+        "_props": {
+            "Name": "曼德尔超算单元",
+            "ShortName": "超算单元",
+            "Description": "哈夫克公司生产的M100超算单元，是基于曼德尔砖进行技术流用的民品级芯片，但其中依然充斥着外界无法解决的黑盒架构，颇具研究价值。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 4.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "supercircuit.bundle",
+                "rcid": ""
+            },
+            "Price": 2029029,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "扫拖一体机器人": {
+        "_id": "扫拖一体机器人",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "扫拖一体机器人",
+        "_props": {
+            "Name": "扫拖一体机器人",
+            "ShortName": "扫拖一体机器人",
+            "Description": "哈夫克家居产品，采用智能导航系统规划清洁路线，提升家庭卫生效率。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 5.6,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "cleaner_robot.bundle",
+                "rcid": ""
+            },
+            "Price": 2035478,
+            "RagfairType": "5b47574386f77428ca22b2f0",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5d1b371186f774253763a656"
+            ]
+        }
+    },
+    "高速磁盘阵列": {
+        "_id": "高速磁盘阵列",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "高速磁盘阵列",
+        "_props": {
+            "Name": "高速磁盘阵列",
+            "ShortName": "高速阵列",
+            "Description": "电子物品，存储加密数据，可为军用，带自毁功能。",
+            "BackgroundColor": "red",
+            "Width": 4,
+            "Height": 3,
+            "Weight": 4.7,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "fastdisk.bundle",
+                "rcid": ""
+            },
+            "Price": 1637299,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "军用炮弹": {
+        "_id": "军用炮弹",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "军用炮弹",
+        "_props": {
+            "Name": "军用炮弹",
+            "ShortName": "军用炮弹",
+            "Description": "军用物品，全自动多模式炮弹，可装载于多种军用设备上。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 40,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "cannon_ammo.bundle",
+                "rcid": ""
+            },
+            "Price": 1459184,
+            "RagfairType": "5b47574386f77428ca22b2f4",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5d0379a886f77420407aa271"
+            ]
+        }
+    },
+    "动力电池组": {
+        "_id": "动力电池组",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "动力电池组",
+        "_props": {
+            "Name": "动力电池组",
+            "ShortName": "动力电池组",
+            "Description": "使用新型材料大幅提升储能性能的电池组，被用于支持超大功耗的工业、航天设备运转。",
+            "BackgroundColor": "red",
+            "Width": 4,
+            "Height": 3,
+            "Weight": 40,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "power_battery.bundle",
+                "rcid": ""
+            },
+            "Price": 1427701,
+            "RagfairType": "5b47574386f77428ca22b2ed",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5d03794386f77420415576f5"
+            ]
+        }
+    },
+    "飞行记录仪": {
+        "_id": "飞行记录仪",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "飞行记录仪",
+        "_props": {
+            "Name": "飞行记录仪",
+            "ShortName": "黑匣子",
+            "Description": "电子物品，飞行数据记录仪。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 15,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "blackbox.bundle",
+                "rcid": ""
+            },
+            "Price": 3203775,
+            "RagfairType": "5b47574386f77428ca22b341",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5c052f6886f7746b1e3db148"
+            ]
+        }
+    },
+    "强力吸尘器": {
+        "_id": "强力吸尘器",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "强力吸尘器",
+        "_props": {
+            "Name": "强力吸尘器",
+            "ShortName": "吸尘器",
+            "Description": "哈夫克家居产品，采用智能光学探测系统，快速扫清顽垢，居家首选。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 3,
+            "Weight": 4.8,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "power_cleaner.bundle",
+                "rcid": ""
+            },
+            "Price": 1452358,
+            "RagfairType": "5b47574386f77428ca22b2f0",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5d1b371186f774253763a656"
+            ]
+        }
+    },
+    "装甲车电池": {
+        "_id": "装甲车电池",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "装甲车电池",
+        "_props": {
+            "Name": "装甲车电池",
+            "ShortName": "装甲车电池",
+            "Description": "为装甲车辆提供动力的大型储能电池，是为了满足军用要求而设计的定制化产品。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 15,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "btrbattery.bundle",
+                "rcid": ""
+            },
+            "Price": 1355157,
+            "RagfairType": "5b47574386f77428ca22b2ed",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5733279d245977289b77ec24"
+            ]
+        }
+    },
+    "自动体外除颤器": {
+        "_id": "自动体外除颤器",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "自动体外除颤器",
+        "_props": {
+            "Name": "自动体外除颤器",
+            "ShortName": "AED",
+            "Description": "便携式医疗设备，用于心脏骤停急救。操作简便，内置语音指导，关键时刻挽救生命。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 3,
+            "Weight": 1.3,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "aed.bundle",
+                "rcid": ""
+            },
+            "Price": 1331466,
+            "RagfairType": "5b47574386f77428ca22b2f3",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5c052e6986f7746b207bc3c9"
+            ]
+        }
+    },
+    "云存储阵列": {
+        "_id": "云存储阵列",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "云存储阵列",
+        "_props": {
+            "Name": "云存储阵列",
+            "ShortName": "云存储阵列",
+            "Description": "集成了最先端磁盘阵列技术的次世代数据存储设备，已经可以满足军用级别的数据加密要求。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 4,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "cloud_storage.bundle",
+                "rcid": ""
+            },
+            "Price": 1528506,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "步战车模型": {
+        "_id": "步战车模型",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "步战车模型",
+        "_props": {
+            "Name": "步战车模型",
+            "ShortName": "步战车模型",
+            "Description": "这台步战车仿真模型，比例精确，细节丰富。配有金属炮管及橡胶轮胎，是军事爱好者收藏的绝佳之选。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 2.3,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "btrmodel.bundle",
+                "rcid": ""
+            },
+            "Price": 1317112,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "克劳迪乌斯半身像": {
+        "_id": "克劳迪乌斯半身像",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "克劳迪乌斯半身像",
+        "_props": {
+            "Name": "克劳迪乌斯半身像",
+            "ShortName": "半身像",
+            "Description": "阿萨拉著名艺术家参考古罗马皇帝克劳迪乌斯创作的半身像。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 3,
+            "Weight": 1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "statue_human.bundle",
+                "rcid": ""
+            },
+            "Price": 1326548,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "笔记本电脑": {
+        "_id": "笔记本电脑",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "笔记本电脑",
+        "_props": {
+            "Name": "笔记本电脑",
+            "ShortName": "笔记本",
+            "Description": "电子物品，笔记本电脑，高效屏幕比例，轻薄随行，散热系统新升级，带来畅爽使用体验。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 2.2,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "notebook.bundle",
+                "rcid": ""
+            },
+            "Price": 3681111,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "军用信息终端": {
+        "_id": "军用信息终端",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "军用信息终端",
+        "_props": {
+            "Name": "军用信息终端",
+            "ShortName": "信息终端",
+            "Description": "这台军用信息终端，具备坚固耐用的外壳和防尘防水设计，能在恶劣环境下稳定工作。搭载高性能处理器和加密存储，确保军事数据安全可靠。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 2,
+            "Weight": 2.7,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "military_terminal.bundle",
+                "rcid": ""
+            },
+            "Price": 905135,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5c052f6886f7746b1e3db148"
+            ]
+        }
+    },
+    "军用电台": {
+        "_id": "军用电台",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "军用电台",
+        "_props": {
+            "Name": "军用电台",
+            "ShortName": "军用电台",
+            "Description": "电子物品，无线信号发射器是一种能提供各种频率、波形和输出电平电信号的设备。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 2,
+            "Weight": 5.3,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "military_radio.bundle",
+                "rcid": ""
+            },
+            "Price": 1025821,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5d03775b86f774203e7e0c4b"
+            ]
+        }
+    },
+    "滑膛枪展品": {
+        "_id": "滑膛枪展品",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "滑膛枪展品",
+        "_props": {
+            "Name": "滑膛枪展品",
+            "ShortName": "滑膛枪",
+            "Description": "稀有且具备历史意义的阿萨拉土制滑膛枪，曾被用在对抗外国殖民者的独立战争中。",
+            "BackgroundColor": "red",
+            "Width": 4,
+            "Height": 1,
+            "Weight": 4.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "old_gun.bundle",
+                "rcid": ""
+            },
+            "Price": 669130,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "军用无人机": {
+        "_id": "军用无人机",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "军用无人机",
+        "_props": {
+            "Name": "军用无人机",
+            "ShortName": "无人机",
+            "Description": "电子物品，利用无线电遥控设备和自备的程序控制装置操纵的飞行器。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 2,
+            "Weight": 0.8,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "military_drone.bundle",
+                "rcid": ""
+            },
+            "Price": 551235,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5d03775b86f774203e7e0c4b"
+            ]
+        }
+    },
+    "呼吸机": {
+        "_id": "呼吸机",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "呼吸机",
+        "_props": {
+            "Name": "呼吸机",
+            "ShortName": "呼吸机",
+            "Description": "医疗道具，能够协助或完全替代患者呼吸，通过向患者提供氧气和控制呼吸频率与压力，以改善呼吸功能和维持生命。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 2,
+            "Weight": 1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "breath_machine.bundle",
+                "rcid": ""
+            },
+            "Price": 447606,
+            "RagfairType": "5b47574386f77428ca22b2f3",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5c052e6986f7746b207bc3c9"
+            ]
+        }
+    },
+    "黄金瞪羚": {
+        "_id": "黄金瞪羚",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "黄金瞪羚",
+        "_props": {
+            "Name": "黄金瞪羚",
+            "ShortName": "瞪羚",
+            "Description": "黄金瞪羚，约300年历史，被阿萨拉王子用于追求潜在伴侣。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 2,
+            "Weight": 2.9,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "statue_animal.bundle",
+                "rcid": ""
+            },
+            "Price": 432780,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5bc9bc53d4351e00367fbcee"
+            ]
+        }
+    },
+    "军用控制终端": {
+        "_id": "军用控制终端",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "军用控制终端",
+        "_props": {
+            "Name": "军用控制终端",
+            "ShortName": "控制终端",
+            "Description": "军用密钥，主要在极端天气和复杂网络下使用，破译机密设备。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 1,
+            "Weight": 0.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "military_control_terminal.bundle",
+                "rcid": ""
+            },
+            "Price": 388595,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "5c052f6886f7746b1e3db148"
+            ]
+        }
+    },
+    "棘龙爪化石": {
+        "_id": "棘龙爪化石",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "棘龙爪化石",
+        "_props": {
+            "Name": "棘龙爪化石",
+            "ShortName": "化石",
+            "Description": "棘龙的爪子，是迄今为止阿萨拉档案中记载的最大的已知恐龙之一。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 1,
+            "Weight": 0.9,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "fossil.bundle",
+                "rcid": ""
+            },
+            "Price": 350040,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "5e54f62086f774219b0f1937"
+            ]
+        }
+    },
+    "奥莉薇娅香槟": {
+        "_id": "奥莉薇娅香槟",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "奥莉薇娅香槟",
+        "_props": {
+            "Name": "奥莉薇娅香槟",
+            "ShortName": "香槟",
+            "Description": "是一种产自法国香槟地区的气泡酒，以其独特的口感和气泡而闻名，常被用于庆祝重要场合和佳节。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 2,
+            "Weight": 0.8,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "champagne.bundle",
+                "rcid": ""
+            },
+            "Price": 340710,
+            "RagfairType": "5b47574386f77428ca22b2f0",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "5d1b376e86f774252519444e"
+            ]
+        }
+    },
+    "显卡": {
+        "_id": "显卡",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "显卡",
+        "_props": {
+            "Name": "显卡",
+            "ShortName": "显卡",
+            "Description": "电子物品，计算机中一种专门处理图形数据的硬件设备，用于加速图形和影像的处理，包括3D图形渲染、视频解码和显示输出等功能，高端游戏电脑必备。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 1,
+            "Weight": 1.4,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "gpu.bundle",
+                "rcid": ""
+            },
+            "Price": 335213,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "57347ca924597744596b4e71"
+            ]
+        }
+    },
+    "万足金条": {
+        "_id": "万足金条",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "万足金条",
+        "_props": {
+            "Name": "万足金条",
+            "ShortName": "金条",
+            "Description": "一整根金条，可以拿去卖钱。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 2,
+            "Weight": 4.2,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "gold_block.bundle",
+                "rcid": ""
+            },
+            "Price": 333903,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "5e54f62086f774219b0f1937"
+            ]
+        }
+    },
+    "量子存储": {
+        "_id": "量子存储",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "量子存储",
+        "_props": {
+            "Name": "量子存储",
+            "ShortName": "量子存储",
+            "Description": "情报道具，哈夫克公司基于量子存储技术开发的小型便携式存储单元，能够实现极高的传输速率和TB级的数据。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "quantum_storage.bundle",
+                "rcid": ""
+            },
+            "Price": 277293,
+            "RagfairType": "5b47574386f77428ca22b341",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "590c621186f774138d11ea29"
+            ]
+        }
+    },
+    "鱼子酱": {
+        "_id": "鱼子酱",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "鱼子酱",
+        "_props": {
+            "Name": "“钻石”鱼子酱",
+            "ShortName": "鱼子酱",
+            "Description": "“钻石”鱼子酱因其产量稀少且仅使用顶级鲟鱼出产而闻名世间，它已不仅是一道美食，更是一种身份的象征，常出现在顶级餐厅和奢华场合。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "caviar.bundle",
+                "rcid": ""
+            },
+            "VanillaPrice": 175607,
+            "Price": 235607,
+            "RagfairType": "5b47574386f77428ca22b2f0",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "5734773724597737fd047c14"
+            ]
+        }
+    },
+    "ECMO": {
+        "_id": "ECMO",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "ECMO",
+        "_props": {
+            "Name": "ECMO",
+            "ShortName": "ECMO",
+            "Description": "ECMO（体外膜肺氧合），使用人造体外循环系统替代心肺功能，为重症患者提供持续的氧合和血液循环支持，是挽救心肺衰竭患者生命的关键医疗设备。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 6.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "ecmo.bundle",
+                "rcid": ""
+            },
+            "Price": 2049622,
+            "RagfairType": "5b47574386f77428ca22b2f3",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "5c0530ee86f774697952d952"
+            ]
+        }
+    },
+    "医疗机械人": {
+        "_id": "医疗机械人",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "医疗机械人",
+        "_props": {
+            "Name": "医疗机械人",
+            "ShortName": "医疗机械人",
+            "Description": "专门用于复杂微创手术场合的医用机械人，超高精度的机械臂可以将手术创伤控制到最小，大大提高手术的成功率。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 3,
+            "Weight": 5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "medic_machine.bundle",
+                "rcid": ""
+            },
+            "Price": 1331651,
+            "RagfairType": "5b47574386f77428ca22b2f3",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5c0530ee86f774697952d952"
+            ]
+        }
+    },
+    "万金泪冠": {
+        "_id": "万金泪冠",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "万金泪冠",
+        "_props": {
+            "Name": "万金泪冠",
+            "ShortName": "万金泪冠",
+            "Description": "哈夫克高层的藏品，王冠与海图被小心翼翼地存放于宝箱之中。",
+            "BackgroundColor": "red",
+            "Width": 3,
+            "Height": 3,
+            "Weight": 0.75,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "crown.bundle",
+                "rcid": ""
+            },
+            "Price": 3734007,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 15,
+            "MapLoot": true,
+            "MapWeight": 120,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "雷斯的留声机": {
+        "_id": "雷斯的留声机",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "雷斯的留声机",
+        "_props": {
+            "Name": "雷斯的留声机",
+            "ShortName": "留声机",
+            "Description": "这段旋律经久不衰，被人们铭记于心。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 3,
+            "Weight": 2.5,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "musicbox.bundle",
+                "rcid": ""
+            },
+            "Price": 1282036,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "59e3639286f7741777737013"
+            ]
+        }
+    },
+    "天圆地方": {
+        "_id": "天圆地方",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "天圆地方",
+        "_props": {
+            "Name": "“天圆地方”",
+            "ShortName": "“天圆地方”",
+            "Description": "“天圆如方盖，地方如棋局”，可真实的世界如若运转起来则更加不可思议。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 2,
+            "Weight": 2,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "earth.bundle",
+                "rcid": ""
+            },
+            "Price": 552138,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5bc9bc53d4351e00367fbcee"
+            ]
+        }
+    },
+    "摄影机": {
+        "_id": "摄影机",
+        "targetid": "59e3639286f7741777737013",
+        "_name": "摄影机",
+        "_props": {
+            "Name": "摄影机",
+            "ShortName": "摄影机",
+            "Description": "电子物品，可以拍摄16K，240帧高精度视频。",
+            "BackgroundColor": "red",
+            "Width": 2,
+            "Height": 2,
+            "Weight": 2.3,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "camera.bundle",
+                "rcid": ""
+            },
+            "Price": 652598,
+            "RagfairType": "5b47574386f77428ca22b2ef",
+            "StaticLoot": true,
+            "StaticWeight": 10,
+            "MapLoot": true,
+            "MapWeight": 80,
+            "LootList": [
+                "5bc9bc53d4351e00367fbcee"
+            ]
+        }
+    },
+    "名贵机械表": {
+        "_id": "名贵机械表",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "名贵机械表",
+        "_props": {
+            "Name": "名贵机械表",
+            "ShortName": "机械表",
+            "Description": "这块金质名贵机械表，镶钻表盘璀璨夺目，精细机芯运转精准。佩戴它，彰显您非凡品味与优雅气质。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "mechine_watch.bundle",
+                "rcid": ""
+            },
+            "VanillaPrice": 212469,
+            "Price": 242469,
+            "RagfairType": "5b47574386f77428ca22b2f1",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "59faf7ca86f7740dbe19f6c2"
+            ]
+        }
+    },
+    "实验数据": {
+        "_id": "实验数据",
+        "targetid": "59faff1d86f7746c51718c9c",
+        "_name": "实验数据",
+        "_props": {
+            "Name": "实验数据",
+            "ShortName": "实验数据",
+            "Description": "情报道具，实验数据。",
+            "BackgroundColor": "red",
+            "Width": 1,
+            "Height": 1,
+            "Weight": 0.1,
+            "CanSellOnRagfair": true,
+            "DiscardLimit": -1,
+            "Prefab": {
+                "path": "testing_data.bundle",
+                "rcid": ""
+            },
+            "Price": 240258,
+            "RagfairType": "5b47574386f77428ca22b341",
+            "StaticLoot": true,
+            "StaticWeight": 5,
+            "MapLoot": true,
+            "MapWeight": 40,
+            "LootList": [
+                "590c621186f774138d11ea29"
+            ]
+        }
+    }
+}

@@ -1,0 +1,422 @@
+﻿
+using BepInEx.Configuration;
+using BepInEx;
+using HarmonyLib;
+using UnityEngine;
+using System.Reflection;
+using SPT.Common.Http;
+using Newtonsoft.Json;
+using System;
+using EFT.InventoryLogic;
+using System.Collections.Generic;
+using System.Xml;
+using TMPro;
+using EFT.UI;
+using UnityEngine.UI;
+using EFT.HealthSystem;
+using EFT.UI.Health;
+using EFT;
+using System.Linq;
+using EFT.UI.SessionEnd;
+
+namespace PriceDisplay
+{
+    [BepInPlugin("com.pricedisplay.test", "PriceTest", "1.0.0")]
+    public class LoadPlugin : BaseUnityPlugin
+    {
+        public static GameObject originalRubsUI;
+        public static GameObject originalExpUI;
+        public static GameObject clonedRubsUI;
+        public static GameObject clonedExpUI;
+        public static Player cachePlayer = new Player();
+        public static TrackedItemSet lootlist = new TrackedItemSet();
+        public static List<string> playerqeuip = new List<string>();
+        public static Dictionary<string, int> pricemap;
+        public static int lootvalue = 0;
+        public static int lootvaluerecord = 0;
+        //public static HashSet<string> lootlist = new HashSet<string>();
+        private void Awake()
+        {
+            var harmony = new Harmony("com.pricedisplay.test");
+            harmony.PatchAll();
+            pricemap = JsonConvert.DeserializeObject<Dictionary<string, int>>(ToolMethodClass.returnClientConnect("2001.11.13-2019.11.23"));
+            lootlist.OnItemAdded = (item) =>
+            {
+                if (!playerqeuip.Contains(item.Id))
+                {
+
+                    Console.WriteLine($"[拾取] 玩家获得了物品: {item.Id}");
+                    lootvalue += ToolMethodClass.GetItemPrice(item.TemplateId) * item.StackObjectsCount;
+                    LoadPlugin.clonedRubsUI.transform.Find("SlotName").gameObject.GetComponent<TextMeshProUGUI>().text = $"₽ {LoadPlugin.lootvalue}";
+                    Console.WriteLine($"当前收益: {lootvalue}");
+                }
+                // TODO: 更新UI / 通知服务端 / 记录时间等
+            };
+            lootlist.OnItemRemoved = (item) =>
+            {
+                if (!playerqeuip.Contains(item.Id))
+                {
+                    int price = ToolMethodClass.GetItemPrice(item.TemplateId) * item.StackObjectsCount;
+                    Console.WriteLine($"[移除] 玩家失去了物品: {item.TemplateId}");
+                    if (lootvalue >= price)
+                    {
+                        lootvalue -= price;
+                        LoadPlugin.clonedRubsUI.transform.Find("SlotName").gameObject.GetComponent<TextMeshProUGUI>().text = $"₽ {LoadPlugin.lootvalue}";
+                    }
+                    else
+                    {
+                        lootvalue = 0;
+                        LoadPlugin.clonedRubsUI.transform.Find("SlotName").gameObject.GetComponent<TextMeshProUGUI>().text = $"₽ {LoadPlugin.lootvalue}";
+                    }
+                    Console.WriteLine($"当前收益: {lootvalue}");
+                }
+                // TODO: 清除临时状态 / 减少积分等
+            };
+            //Logger.LogInfo("MyPlugin is loading...");
+
+            //string string2 = ToolClass.increaseStrength(1, 5);
+            //Logger.LogInfo("MyPlugin loaded and patches applied.");
+        }
+        public static LoadPlugin Instance;
+
+    }
+
+    [HarmonyPatch]
+    public class Patch_Player_OnItemAdded
+    {
+        // 用于定位目标方法（非public）
+        static MethodInfo TargetMethod()
+        {
+            var type = AccessTools.TypeByName("Player");
+            return AccessTools.Method(type, "OnItemAdded");
+        }
+
+        // Postfix 打印调用信息
+        static void Postfix(object __instance, GEventArgs1 eventArgs)
+        {
+
+            if (ReferenceEquals(__instance, LoadPlugin.cachePlayer))
+            {
+                Console.WriteLine("获得物品");
+                //var eventType = eventArgs.GetType();
+
+                //var statusProp = eventType.GetProperty("Status");
+                //var itemProp = eventType.GetProperty("Item");
+                //var toProp = eventType.GetProperty("To");
+
+                //var status = statusProp?.GetValue(eventArgs);
+                //var item = itemProp?.GetValue(eventArgs);
+                //var to = toProp?.GetValue(eventArgs);
+                //Debug.Log($"[Patch:Player] OnItemAdded Called");
+                //Console.WriteLine($"- Status: {status}");
+                //Console.WriteLine($"- Item: {item}");
+                //Console.WriteLine($"- To: {to}");
+                //Console.WriteLine($"- Id: {eventArgs.Item.Id}");
+                //Console.WriteLine($"- TemplateId: {eventArgs.Item.TemplateId}");
+                //Console.WriteLine("===== eventArgs 结构 =====");
+                IEnumerable<Item> itemslist = eventArgs.Item.GetAllItems();
+                foreach (var items in itemslist)
+                {
+                    Console.WriteLine($"Item: {items.Id}, TemplateId: {items.TemplateId}, Price: {ToolMethodClass.GetItemPrice(items.TemplateId)}");
+                    LoadPlugin.lootlist.Add(items);
+                }
+
+                //var json = JsonConvert.SerializeObject(eventArgs);
+                //Console.WriteLine(json);
+                //Console.WriteLine("=========================");
+                //if (item != null)
+                //{
+                //    var templateId = item.GetType().GetProperty("TemplateId")?.GetValue(item);
+                //    var Id = item.GetType().GetProperty("Id")?.GetValue(item);
+                //    Console.WriteLine($"- Id: {Id}");
+                //    Console.WriteLine($"- TemplateId: {templateId}");
+                //}
+
+                // 输出调用堆栈
+                //Debug.Log($"[Patch:Player] Stack:\n{System.Environment.StackTrace}");
+            }
+
+        }
+    }
+    [HarmonyPatch]
+    public class Patch_Player_OnItemRemoved
+    {
+        // 用于定位目标方法（非public）
+        static MethodInfo TargetMethod()
+        {
+            var type = AccessTools.TypeByName("Player");
+            return AccessTools.Method(type, "OnItemRemoved");
+        }
+
+        // Postfix 打印调用信息
+        static void Postfix(object __instance, GEventArgs3 eventArgs)
+        {
+            if (ReferenceEquals(__instance, LoadPlugin.cachePlayer))
+            {
+                Console.WriteLine("失去物品");
+                IEnumerable<Item> itemslist = eventArgs.Item.GetAllItems();
+                foreach (var items in itemslist)
+                {
+                    Console.WriteLine($"Item: {items.Id}, TemplateId: {items.TemplateId}, Price: {ToolMethodClass.GetItemPrice(items.TemplateId)}");
+                    LoadPlugin.lootlist.Remove(items);
+                }
+            }
+
+        }
+    }
+
+    [HarmonyPatch(typeof(ContainersPanel), "Show")]
+    public class HealthParametersPanel_Show_Patch
+    {
+        // Postfix 在原方法执行后调用，获取参数和实例
+        public static void Postfix(ContainersPanel __instance)
+        {
+            // 这里可以访问传入参数，和HealthParametersPanel实例 __instance
+            //Logger.LogInfo($"Show called! baseHealthController: {baseHealthController}, inventory: {inventory}, skills: {skills}");
+            GameObject healthui = GameObject.Find("Overall Health");
+            //GameObject healthui = GameObject.Find("Content"); 
+            if (LoadPlugin.originalRubsUI == null)
+            {
+                LoadPlugin.originalRubsUI = GameObject.Find("Common UI/Common UI/InventoryScreen/Items Panel/LeftSide/Containers Panel/Scrollview Parent/Containers Scrollview/Content/TacticalVest Slot/Header Panel/SlotViewHeader/");
+                Console.WriteLine("尝试继承UI组件");
+            }
+            if (LoadPlugin.originalRubsUI == null)
+            {
+                Console.WriteLine("无法找到UI组件");
+                return;
+            }
+            // 克隆UI
+            if (LoadPlugin.clonedRubsUI == null)
+            {
+                Console.WriteLine("开始复制UI组件");
+                LoadPlugin.clonedRubsUI = UnityEngine.Object.Instantiate(LoadPlugin.originalRubsUI);
+                Console.WriteLine("UI组件赋值完成");
+                //LoadPlugin.clonedRubsUI.name = LoadPlugin.originalRubsUI.name + "_Clone";
+                Console.WriteLine("UI组件改名完成");
+                LoadPlugin.clonedRubsUI.transform.SetParent(LoadPlugin.originalRubsUI.transform.parent, false);
+                //LoadPlugin.clonedRubsUI;
+                var rect = LoadPlugin.clonedRubsUI.GetComponent<RectTransform>();
+                rect.anchoredPosition3D += new Vector3(0, 36, 0);
+                rect.localScale = new Vector3(1.75f, 1.75f, 1);
+                //rect.anchoredPosition = new Vector2(0f, 0f);
+                //var horizion = LoadPlugin.clonedRubsUI.GetComponent<HorizontalLayoutGroup>();
+                //horizion.enabled = false; 
+                //LoadPlugin.clonedRubsUI.transform.root.position = new Vector3 (0, 0, 0);
+                /*
+                if (rect != null)
+                {
+                    Console.WriteLine("调整变换");
+                    rect.anchoredPosition = new Vector2(60, 50);
+                    rect.anchoredPosition3D = new Vector3(60, 50, 0);  // 右移50，防止重叠
+                    LayoutRebuilder.ForceRebuildLayoutImmediate(rect);
+                }
+                */
+                //Transform image = LoadPlugin.clonedRubsUI.transform.Find("Image");
+                Transform arrow = LoadPlugin.clonedRubsUI.transform.Find("ArrowHolder");
+                Transform label = LoadPlugin.clonedRubsUI.transform.Find("SlotName");
+                arrow.gameObject.SetActive(false);
+                //image.gameObject.SetActive(false);
+                // 修改本地位置（相对于父物体）
+                //childTransform.localPosition = new Vector3(-53f, -14f, 0f);
+
+                // 修改缩放（相对于原始大小）
+                //childTransform.localScale = new Vector3(1.7f, 1f, 1f);
+
+                // 也可以改旋转
+                //childTransform.localEulerAngles = new Vector3(0f, 0f, 45f);
+                if (label != null)
+                {
+                    //label.gameObject.SetActive(false);
+                    Console.WriteLine("尝试更新组件位置");
+                    var rects = label.GetComponent<RectTransform>();
+                    //rects.position = new Vector3(0, 0, 0);
+                    //rects.localPosition -= new Vector3(0, -23.4f, 0);
+                    //rects.anchoredPosition3D = new Vector3(50, 50, 0);
+                    //label.transform.root.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, 0f);
+                    //label.transform.localPosition = new Vector3(0, 0, 0); //为啥你就没法改呢....神必
+                    //label.gameObject.SetActive(false);
+                    var tmpro = label.gameObject.GetComponent<TextMeshProUGUI>();
+                    tmpro.text = $"₽ {LoadPlugin.lootvalue}"; //没问题
+                    tmpro.horizontalAlignment = HorizontalAlignmentOptions.Left;
+                    //tmpro.gameObject.transform.localPosition = new Vector3(0, 0, 0);
+                    //tmpro.gameObject.transform.position = new Vector3(0, 0, 0);
+                    Console.WriteLine("尝试更新组件文本");
+                    //label.gameObject.SetActive(true);
+
+                }
+                LoadPlugin.clonedRubsUI.SetActive(false);
+                LoadPlugin.clonedRubsUI.SetActive(true);
+                Console.WriteLine("已复制UI组件");
+            }
+            if (healthui != null)
+            {
+
+            }
+
+
+
+        }
+    }
+
+    [HarmonyPatch(typeof(GameWorld), "OnGameStarted")]
+    public class Patch_GameWorld_OnGameStarted
+    {
+        // Postfix 方法
+        [HarmonyPostfix]
+        public static void Postfix(GameWorld __instance)
+        {
+            Debug.Log("[Patch] GameWorld.OnGameStarted Postfix called!");
+            //InstanceClass.gameWorld = __instance;
+            //ActiveHealthController aHCInstance = __instance.MainPlayer.ActiveHealthController;
+            LoadPlugin.cachePlayer = __instance.MainPlayer;
+            Inventory inv = __instance.MainPlayer.Profile.Inventory;
+            InventoryEquipment equip = __instance.MainPlayer.Profile.Inventory.Equipment;
+            //LoadPlugin.playerqeuip = ToolMethodClass.GetEquippedItemIds(equip);
+            List<string> itemIds = inv.GetPlayerItems(EPlayerItems.Equipment).Select(item => item.Id).ToList();
+            var equipitem = inv.GetPlayerItems(EPlayerItems.Equipment);
+            LoadPlugin.playerqeuip = itemIds;
+            Console.WriteLine("装备中的 Item Id 列表：");
+            foreach (var item in equipitem)
+            {
+                Console.WriteLine($"Item ID: {item.Id}, TemplateId: {item.TemplateId}, Name: {item.Name.Localized()}");
+            }
+            Console.WriteLine(string.Join("\n", itemIds));
+            //InstanceClass.MaxHealth = (int)aHCInstance.GetBodyPartHealth(EBodyPart.Common, true).Maximum;
+            //InstanceClass.StartHealth = (int)aHCInstance.GetBodyPartHealth(EBodyPart.Common, true).Current;
+
+            //ToolClass.UpdateRealStrength(InstanceClass.StartHealth);
+
+            // 你自己的逻辑：比如访问游戏世界或初始化内容
+            // 示例：获取当前玩家
+        }
+    }
+
+    [HarmonyPatch(typeof(SessionResultExitStatus), "Awake")]
+    public class Patch_SessionResultExitStatus_Awake
+    {
+        // Postfix 方法
+        [HarmonyPostfix]
+        public static void Postfix(GameWorld __instance)
+        {
+            LoadPlugin.lootvalue = 0;
+            LoadPlugin.lootlist.Clear();
+            LoadPlugin.playerqeuip = new List<string>();
+            //LoadPlugin.cachePlayer = new Player();
+            //InstanceClass.MaxHealth = (int)aHCInstance.GetBodyPartHealth(EBodyPart.Common, true).Maximum;
+            //InstanceClass.StartHealth = (int)aHCInstance.GetBodyPartHealth(EBodyPart.Common, true).Current;
+
+            //ToolClass.UpdateRealStrength(InstanceClass.StartHealth);
+
+            // 你自己的逻辑：比如访问游戏世界或初始化内容
+            // 示例：获取当前玩家
+        }
+    }
+    public class TrackedItemSet
+    {
+        private HashSet<string> itemSet = new HashSet<string>();
+
+        // 添加项时执行的回调
+        public Action<Item> OnItemAdded;
+
+        // 移除项时执行的回调
+        public Action<Item> OnItemRemoved;
+
+        public bool Add(Item item)
+        {
+            // 只有当真正新增时执行
+            if (itemSet.Add(item.Id))
+            {
+                OnItemAdded?.Invoke(item);
+                return true;
+            }
+            return false;
+        }
+
+        public bool Remove(Item item)
+        {
+            if (itemSet.Remove(item.Id))
+            {
+                OnItemRemoved?.Invoke(item);
+                return true;
+            }
+            return false;
+        }
+
+        public bool Contains(string itemId) => itemSet.Contains(itemId);
+        public void Clear()
+        {
+            // 清空 HashSet
+            itemSet.Clear();
+        }
+        public IEnumerable<string> GetAll() => itemSet;
+    }
+
+
+    public static class ToolMethodClass
+    {
+        public static string returnClientConnect(string request)
+        {
+            return RequestHandler.PostJson("/ShowLootValue/pullPriceMap", JsonConvert.SerializeObject(new Request.ReturnPriceMap(request)));
+        }
+        public static int GetItemPrice(string itemId)
+        {
+            return LoadPlugin.pricemap.TryGetValue(itemId, out var price) ? price : 0;
+        }
+        public static RectTransform GetRectTransform(this GameObject gameObject)
+        {
+            return gameObject.transform as RectTransform;
+        }
+        public static List<string> GetEquippedItemIds(InventoryEquipment equipment)
+        {
+            List<string> list = new List<string>();
+
+            foreach (Slot slot in equipment.GetAllSlots())
+            {
+                Item containedItem = slot.ContainedItem;
+                if (containedItem != null)
+                {
+                    list.Add(containedItem.Id);  // 获取主物品的实例 ID
+
+                    // 如果是复合物品，则递归获取子插槽内物品的 ID
+                    if (containedItem is CompoundItem compoundItem)
+                    {
+                        list.AddRange(
+                            compoundItem.AllSlots
+                                .Where(childSlot => childSlot.ContainedItem != null)
+                                .Select(childSlot => childSlot.ContainedItem.Id)
+                        );
+                    }
+                }
+            }
+
+            return list;
+        }
+
+    }
+    internal static class Request
+    {
+        public class ReturnPriceMap
+        {
+            public ReturnPriceMap(string request)
+            {
+                this.request = request;
+            }
+            public string request;
+
+        }
+    }
+    internal static class ItemGet
+    {
+        public class ItemComponent
+        {
+            public ItemComponent(string itemId, string templateId)
+            {
+                this.itemId = itemId;
+                this.templateId = templateId;
+            }
+            public string itemId;
+            public string templateId;
+
+        }
+    }
+}
